@@ -3,6 +3,7 @@
 
 
 ![Fine Tracker logo](logo@16.png) Fine tracker is a
+Devloped by KHUSHAL
 
 * Free
 * Open-Source
