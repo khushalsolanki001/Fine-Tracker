@@ -16,8 +16,7 @@ personal expense tracking app.
 ## Download Fine Tracker (beta)
 
 
-> You can build and run for Linux and macOS. Haven't tested Windows yet[^2]
-
+> You can build on Android studio and run on android.
 ## Features
 
 * Simple & seamless UX
@@ -44,12 +43,10 @@ Fine Tracker is a collage project.
 * [Flutter](https://flutter.dev/) (latest stable)
 
 Other:
-
+* android stduio (lady bug)
 * JDK 1.8 or 17 if you're gonna build for Android
-* [XCode](https://developer.apple.com/xcode/) if you're gonna build for iOS/macOS
-* To run tests on your machine, see [Testing](#testing)
+* graddlle version 8.12
 
-Building for Windows, macOS, and Linux-based systems requires the same
 dependencies as Flutter. Read more on <https://docs.flutter.dev/platform-integration>
 
 ### Testing
