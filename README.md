@@ -1,8 +1,8 @@
-# ![Fine Tracker logo](logo@32.png) Flow
+# ![Fine Tracker logo](logo@32.png) Fine Tracker
 
 
 
-![Fine Tracker logo](logo@16.png) Flow is a
+![Fine Tracker logo](logo@16.png) Fine tracker is a
 
 * Free
 * Open-Source
@@ -13,7 +13,7 @@
 
 personal expense tracking app.
 
-## Download Flow (beta)
+## Download Fine Tracker (beta)
 
 
 > You can build and run for Linux and macOS. Haven't tested Windows yet[^2]
@@ -28,10 +28,9 @@ personal expense tracking app.
   * Fully recoverable backups (ZIP/JSON)
   * Export CSV for external software use (i.e., Google Sheets)
 
-## Support Flow
+## Support Fine Tracker
 
-Flow is a personal project developed during my free time, and it generates no
-income. Consider helping Flow! Here are some suggestions:
+Fine Tracker is a collage project.
 
 * Give a star on [GitHub](https://github.com/khushalsolanki001/Fine-Tracker)
 
