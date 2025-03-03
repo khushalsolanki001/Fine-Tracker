@@ -1,8 +1,6 @@
 # ![Flow logo](logo@32.png) Flow
 
 
-[![Flow's GitHub repo](https://img.shields.io/badge/GitHub-flow--mn/flow-f5ccff?logo=github&logoColor=white&style=for-the-badge)](https://github.com/khushalsolanki001/Fine-Tracker)&nbsp;
-
 
 ![Fine Tracker logo](logo@16.png) Flow is a
 
