@@ -71,4 +71,4 @@ to enhance the UI for desktop experience for now.
 
 [^3]: Please double-check from the official website, may be outdated. Visit
 <https://docs.objectbox.io/getting-started#add-objectbox-to-your-project>
-(make sure to choose Flutter to see the script).
+(make sure to choose Flutter to see the script)..
