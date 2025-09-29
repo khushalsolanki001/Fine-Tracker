@@ -1,74 +1,127 @@
 # ![Fine Tracker logo](logo@32.png) Fine Tracker
 
+**Personal, offline-first expense tracker**
 
+Fine Tracker is a lightweight, open-source personal expense tracking app focused on simplicity and user experience. Developed by Khushal Solanki, it’s free, easy to build from source, and keeps your data locally (offline-first) — with optional internet access only for currency exchange rates.
 
-![Fine Tracker logo](logo@16.png) Fine tracker is a
-Devloped by KHUSHAL
+---
 
-* Free
-* Open-Source
-* Simple
-* UX-Focused
-* Fully-offline[^1]
-* Cross-platform[^2]
+## Quick facts
 
-personal expense tracking app.
+* **Free & Open‑Source**
+* **Simple & UX‑focused**
+* **Fully offline** (internet only required for currency exchange rates)
+* **Cross‑platform** — Android now; macOS/Windows/Linux builds available but desktop UI is not actively optimized yet
 
-## Download Fine Tracker (beta)
+---
 
-
-> You can build on Android studio and run on android.
 ## Features
 
-* Simple & seamless UX
-* Multiple accounts
-* Multiple currencies
-* Fully-offline[^1]
-* Full export/backup
-  * Fully recoverable backups (ZIP/JSON)
-  * Export CSV for external software use (i.e., Google Sheets)
+* Clean, minimal UI for quick expense entry
+* Multiple accounts (bank, cash, cards)
+* Multiple currencies with optional exchange‑rate updates
+* Full export & backup options:
 
-## Support Fine Tracker
+  * Recoverable backups (ZIP / JSON)
+  * CSV export for spreadsheets (Google Sheets, Excel)
+* Local-first storage for privacy and fast performance
 
-Fine Tracker is a collage project.
+---
 
-* Give a star on [GitHub](https://github.com/khushalsolanki001/Fine-Tracker)
+## Download / Build (beta)
 
+There is no official store release yet — build from source and run locally.
 
-  
-  
+**Quick build steps**
 
+```bash
+# clone
+git clone https://github.com/khushalsolanki001/Fine-Tracker.git
+cd Fine-Tracker
 
-### Prerequisites
+# fetch dependencies
+flutter pub get
 
-* [Flutter](https://flutter.dev/) (latest stable)
+# (optional but required for some platforms/tests)
+# install ObjectBox native libraries
+bash <(curl -s https://raw.githubusercontent.com/objectbox/objectbox-dart/main/install.sh)
 
-Other:
-* android stduio (lady bug)
-* JDK 1.8 or 17 if you're gonna build for Android
-* graddlle version 8.12
+# run on a connected Android device or emulator
+flutter run -d <device-id>
 
-dependencies as Flutter. Read more on <https://docs.flutter.dev/platform-integration>
+# build a release APK
+flutter build apk --release
+```
 
-### Testing
+You can also open the project in Android Studio and run/debug from there.
 
-If you plan to run tests on your machine, ensure you've installed ObjectBox
-dynamic libraries.
+---
 
-Install ObjectBox dynamic libraries[^3]:
+## Prerequisites
 
-`bash <(curl -s https://raw.githubusercontent.com/objectbox/objectbox-dart/main/install.sh)`
+* [Flutter SDK](https://flutter.dev/) — latest stable channel
+* Android Studio (for Android builds and emulators)
+* JDK (1.8 or 17 recommended for Android)
+* Gradle 8.x (matching Android Gradle Plugin requirements)
 
-Testing:
+Note: follow Flutter's platform setup guide for the most reliable toolchain configuration.
 
-`flutter test`
+---
 
-[^1]: Flow requires internet to download currency exchage rates. Only necessary
-if you use more than one currencies
+## Testing
 
-[^2]: Will be available on macOS, Windows, and Linux-based systems, but no plan
-to enhance the UI for desktop experience for now.
+If you plan to run tests locally, make sure the ObjectBox native libraries are installed (see the install command above). Then:
 
-[^3]: Please double-check from the official website, may be outdated. Visit
-<https://docs.objectbox.io/getting-started#add-objectbox-to-your-project>
-(make sure to choose Flutter to see the script)..
+```bash
+flutter test
+```
+
+---
+
+## Backups & Exports
+
+* Backups are designed to be fully recoverable (ZIP / JSON). Keep periodic backups off‑device if you want extra safety.
+* CSV export lets you analyze or import data into Google Sheets, Excel, or other tools.
+
+---
+
+## Support & Contributing
+
+Fine Tracker is a college/student project. If you find it useful or want to help:
+
+* ⭐ Star the repo on GitHub: [https://github.com/khushalsolanki001/Fine-Tracker](https://github.com/khushalsolanki001/Fine-Tracker)
+* Report issues or feature requests via GitHub Issues
+* Contributions are welcome — fork the repo, make changes, and submit a PR. Please follow consistent formatting and include tests where possible.
+
+Suggestions for helpful contributions:
+
+* Bug fixes and stability improvements
+* Localization / translations
+* Desktop UI improvements (macOS/Windows/Linux)
+* Automated tests and CI setup
+
+---
+
+## Notes
+
+1. Currency exchange rate updates require an internet connection — otherwise the app remains fully functional in a single currency.
+2. Desktop builds are possible, but the UI is currently targeted at mobile; desktop UX is not a priority at the moment.
+3. Double‑check ObjectBox installation and platform specifics on the official ObjectBox docs if you run into issues.
+
+---
+
+## License
+
+If you haven’t already added one, consider adding a `LICENSE` file (MIT, Apache 2.0, etc.) so others know how they can use and contribute to the project.
+
+---
+
+### Want changes?
+
+Tell me if you want:
+
+* A shorter README (one‑page summary)
+* A PR-ready patch (`git diff` or patch file)
+* A version tailored for the GitHub repo front page (badges, build status, license badge, screenshots)
+
+Happy to refine it further!
